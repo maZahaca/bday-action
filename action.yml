@@ -10,8 +10,6 @@ inputs:
     description: "How much time to play the message before stop"
     required: false
 
-outputs:
-
 runs:
   using: "node16"
   main: "index.js"

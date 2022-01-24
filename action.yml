@@ -9,6 +9,9 @@ inputs:
   secondsToStop:
     description: "How much time to play the message before stop"
     required: false
+  exit:
+    description: "Drop the execution of original process"
+    required: false
 
 runs:
   using: "node16"

@@ -3,6 +3,7 @@ const figlet = require('figlet');
 
 const {
   INPUT_NAME,
+  INPUT_EXIT,
   INPUT_SECONDS_TO_STOP = '60',
   GITHUB_ACTOR,
 } = process.env;
@@ -28,6 +29,9 @@ const formattedMessage = message.replace(/ /g, '   ');
 
     setTimeout(() => {
       animation.stop();
+      if (INPUT_EXIT) {
+        process.exit(1);
+      }
     }, parseInt(INPUT_SECONDS_TO_STOP, 10) * 1000)
   } catch (err) {
     console.log('Something went wrong ...');

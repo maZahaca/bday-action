@@ -1,0 +1,22 @@
+name: "Birthday action"
+description: "Github Action for sending birthday wishes to dev/ops person in the team"
+author: "InfraWay"
+
+inputs:
+  name:
+    description: "Name to congratulate"
+    required: true
+  secondsToStop:
+    description: "How much time to play the message before stop"
+    required: false
+
+outputs:
+
+runs:
+  using: "node16"
+  main: "index.js"
+
+branding:
+  icon: "message-circle"
+  color: "purple"
+

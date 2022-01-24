@@ -1,0 +1,26 @@
+{
+  "name": "bday-action",
+  "version": "1.0.0",
+  "description": "Github Action for sending birthday wishes to dev/ops person in the team",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "birthday",
+    "fun",
+    "congratulate"
+  ],
+  "author": "Andrew Red <iam@andrew.red>",
+  "license": "MIT",
+  "homepage": "https://github.com/maZahaca/bday-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.5.0"
+  }
+}
